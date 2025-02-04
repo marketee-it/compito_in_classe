@@ -3,6 +3,7 @@ Questo è il primo compito in classe
 L'obiettivo è quello di completare le funzioni che trovate nella cartella
 libs, quindi verificare il funzionamento delle classi.
 Ogni funzione ha un punteggio variabile da 0.1 a 3.0
+
 Regole:
 
  - Si possono usare gli appunti
