@@ -10,7 +10,7 @@ Regole:
 
 ## Informativa:
 1. Il compito deve essere consegnato su Google Drive all'indirizzo che verrà dato entro 5 minuti, la mancata consegna entro il termine stabilito comporterà una votazione equivalente a NC
-2. Se non sapete fare una funzione andate avanti, non si soffermate
+2. Se non sapete fare una funzione andate avanti, non vi soffermate
 3. Ogni studente ha diritto a 3 suggerimenti:
    - Il suggerimento non comporta la soluzione del problema
 4. La correzione verrà pubblicata su GitHub entro 7 giorni dalla data odierna
