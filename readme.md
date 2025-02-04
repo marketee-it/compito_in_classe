@@ -24,7 +24,13 @@ Leggi il codice!!!!!!!
 
 No scherzo:
 Un'azienda (supermercato) ha chiesto un sistema automatico per la creazione dell'anagrafica dei propri clienti.
-Il vostro PR (Project Manager), che non sa programmare, vi consegna questi file, dopo esservi messi le mani nei capelli e tirato giù qualche essere celeste, vi viene detto che la demo è stata fissata tra tre ore (momento di panico).
-L'obiettivo vostro è di non far fallire l'azienda: la Di Sabatino International Corporation, per questo venite ingaggiati per completare le seguenti librerie.
+
+Il vostro PR (Project Manager), che non sa programmare, vi consegna questi file. 
+
+Dopo esservi messi le mani nei capelli e tirato giù qualche essere celeste, vi viene detto che la demo è stata fissata tra tre ore (momento di panico).
+
+L'obiettivo vostro è di non far fallire l'azienda: la *Di Sabatino International Corporation*, per questo venite ingaggiati per completare le seguenti librerie.
+
 Il project Manager crede in voi, e l'azienda anche.
+
 Salva anche tu l'azienda.
