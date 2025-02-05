@@ -8,7 +8,7 @@ struct Customer {
 
 class Customers {
     private:
-        List<Customer> customers;
+        List<Customer> customers{};
 
     public:
         /**
