@@ -14,7 +14,7 @@ public:
      * @param elem
      */
     void pushBack(T elem) {
-       pushAt(length(), elem);
+        pushAt(length(), elem);
     }
 
     /**
@@ -22,7 +22,7 @@ public:
      * @param elem
      */
     void pushFront(T elem) {
-       pushAt(0, elem);
+        pushAt(0, elem);
     }
 
     /**
@@ -119,10 +119,16 @@ public:
      * @return 
      */
     T pop() {
+        if (!head) {
+            return T();
+        }
+
         T elem = head->payload;
-        cell *tmp = head->next;
-        head->next = tmp->next;
+        cell *tmp = head;
+
+        head = head->next;
         delete tmp;
+
         return elem;
     }
 
