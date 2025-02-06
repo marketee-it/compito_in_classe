@@ -126,7 +126,7 @@ public:
     }
 
     bool has(T elem) {
-        cell* tmp = head;
+        cell *tmp = head;
         while (tmp && tmp->payload != elem) {
             tmp = tmp->next;
         }
@@ -134,14 +134,14 @@ public:
     }
 
     int indexOf(T elem) {
-      if(!has(elem)) return -1;
-      int counter = 0;
-      cell *tmp = head;
-      while (tmp && tmp->payload != elem) {
-        counter++;
-        tmp = tmp->next;
-      }
-      return counter;
+        if (!has(elem)) return -1;
+        int counter = 0;
+        cell *tmp = head;
+        while (tmp && tmp->payload != elem) {
+            counter++;
+            tmp = tmp->next;
+        }
+        return counter;
     }
 
     /**
@@ -160,6 +160,25 @@ public:
         delete tmp;
 
         return elem;
+    }
+
+    T at(int index) {
+        if (isEmpty() || index < 0 || index >= length()) {
+            throw std::out_of_range("index out of range");
+        }
+        if (index == 0) {
+            return head->payload;
+        }
+        cell *tmp = head;
+        int counter = 0;
+        while (counter < index - 1) {
+            tmp = tmp->next;
+            counter++;
+        }
+        if (tmp) {
+            return tmp->payload;
+        }
+        throw std::out_of_range("index out of range");
     }
 
     bool isEmpty() {
