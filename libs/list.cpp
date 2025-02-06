@@ -1,3 +1,6 @@
+//
+// Created by ric on 2/6/25.
+//
 template<typename T>
 class List {
 private:
@@ -103,20 +106,47 @@ public:
      * @param index
      */
     void removeAt(int index) {
-        if (isEmpty()) return;
-        if (length() <= index) return;
-        cell *tmp = head;
-        for (int i = 0; i < index; i++) {
+        if (isEmpty() || index < 0 || index >= length()) return;
+
+        if (index == 0) {
+            pop();
+            return;
+        }
+
+        cell *prev = head;
+        for (int i = 0; i < index - 1; i++) {
+            prev = prev->next;
+        }
+
+        cell *toDelete = prev->next;
+        if (toDelete) {
+            prev->next = toDelete->next;
+            delete toDelete;
+        }
+    }
+
+    bool has(T elem) {
+        cell* tmp = head;
+        while (tmp && tmp->payload != elem) {
             tmp = tmp->next;
         }
-        cell *current = tmp->next;
-        tmp->next = current->next;
-        delete current;
+        return tmp != nullptr;
+    }
+
+    int indexOf(T elem) {
+      if(!has(elem)) return -1;
+      int counter = 0;
+      cell *tmp = head;
+      while (tmp && tmp->payload != elem) {
+        counter++;
+        tmp = tmp->next;
+      }
+      return counter;
     }
 
     /**
      * La funzione elimina il primo elemento (in testa) e lo restituisce.
-     * @return 
+     * @return
      */
     T pop() {
         if (!head) {
